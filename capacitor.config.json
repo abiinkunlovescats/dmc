@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "DMC",
+	"webDir": "build",
+	"bundledWebRuntime": false
+}
