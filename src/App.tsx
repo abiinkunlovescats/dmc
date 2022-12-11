@@ -38,9 +38,10 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
-
+/* Tailwind styles */
+import './theme/tailwind.css';
 setupIonicReact();
-let login = false;
+let login = true;
 function Maincom(){
   return(
     <IonReactRouter>
@@ -82,19 +83,18 @@ function Maincom(){
   );
 }
 function App() {
-  if (login){
+  if (!login){
   return (
   <IonApp>
     <Maincom/>
   </IonApp>
+
   );}
   else{
     return(
     <IonApp>
-      
-            <Login/>
-         
-  </IonApp>
+      <Login/>
+    </IonApp>
   
   );}
 
